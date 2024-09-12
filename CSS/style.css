@@ -1,1 +1,219 @@
 /* ini CSS */
+
+
+/* Styling Main-Header */
+.main-header {
+    text-align: center;
+}
+
+
+/* Styling Navigasi-Content */
+.ul-selection-content {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow:hidden;
+    background-color: #b30404;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+
+.li-selection-content {
+    margin: left;
+}
+
+li a {
+    display: flex;
+    align-items: center;
+    height: 30px;
+    text-align: center;
+    padding: 14px 16px;
+    color:whitesmoke;
+    text-decoration:none;
+}
+
+li a:hover:not(.active) {
+    background-color: #8a0202;
+}
+
+.active {
+    background-color:whitesmoke ;
+}
+
+
+/* Konten Utama */
+.main-content {
+    display: flex;
+}
+
+.main-content>aside {
+    flex: 1;
+}
+
+.main-content-wrapper {
+    margin: 20px;
+    padding: 20px;
+    border: 5px solid darkgrey;
+    border-radius: 20px;
+}
+
+/* Konten Luas Segitiga */
+.segitiga-header {
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border: 0px solid;
+    border-radius: 20px;
+    padding-block: 20px;
+    color: whitesmoke;
+    background-color: #b30404;
+}
+
+.konten-segitiga {
+    display: flex;
+    flex-direction: column;
+}
+
+.luas-segitiga-img {
+    border: 0px;
+    width: 300px;
+    height: 300px;
+    background-image:url(/Aset/Luas-Segitiga.png);
+    align-self: center;
+}
+
+.rumus-luas-segitiga {
+    margin: 0px;
+    width: 150px;
+    height: 20px;
+    padding: 5px;
+    border: 2px solid rgb(162, 150, 40);
+    border-radius: 10px;
+    text-align: center;
+    align-self: center;
+    background-color: khaki;
+}
+
+.ul-keterangan-rumus {
+    margin: 0px;
+    list-style-type: none;
+}
+
+.input-wrapper{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.input-wrapper>input{
+    width: 65%;
+}
+
+input[type=number] {
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  .btn-hitung {
+    width: 20%;
+    text-align: center;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  input[type=hitung]:hover {
+    background-color: #45a049;
+  }
+
+  .btn-reset {
+    width: 10%;
+    text-align: center;
+    background-color: #d8b507;
+    color: white;
+    padding: 10px 15px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  input[type=reset]:hover {
+    background-color: #faff5c;
+  }
+
+
+  /* Konten Keliling Segitiga */
+  .keliling-segitiga-img {
+    border: 0px;
+    width: 300px;
+    height: 300px;
+    background-image:url(/Aset/Keliling-Segitiga.png);
+    align-self: center;
+}
+
+.rumus-keliling-segitiga {
+    margin: 0px;
+    width: 150px;
+    height: 20px;
+    padding: 5px;
+    border: 2px solid rgb(162, 150, 40);
+    border-radius: 10px;
+    text-align: center;
+    align-self: center;
+    background-color: khaki;
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+    .container-section {
+        padding: 10px;
+        display: block;
+        height: 72%;
+    }
+
+    .input-section, .result-section {
+        width: 100%;
+        height: 72%;
+        margin: 0;
+        display: block;
+    }
+    .rumus {
+        display: block;
+        height: 50%;
+    }
+    .main {
+        display: block;
+    }
+    
+    body {
+        display: block;
+    }
+
+    footer {
+        height: 50%;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .input-section, .result-section {
+        padding: 5px;
+    }
+
+    .input-luas, .input-keliling {
+        margin-bottom: 20px;
+    }
+}
