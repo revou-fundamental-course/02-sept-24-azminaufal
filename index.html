@@ -46,13 +46,13 @@
             <form>
                 <div class="input-wrapper">
                     <label for="alas">Panjang Alas</label>
-                    <input id="alas" type="number" placeholder="masukkan alas (cm)" required />
+                    <input type="number" id="alas"  placeholder="masukkan alas (cm)" required />
                 </div>
                 <div class="input-wrapper">
                     <label for="tinggi">Tinggi</label>
                     <input id="tinggi" type="number" placeholder="masukkan tinggi (cm)" required />
                 </div>
-                    <form id="hasil-luas" Hasil Perhitungan:></form>
+                    <p id="hasil">Hasil Perhitungan:</p>
                     <button class="btn-hitung" onclick="calcluas()">Hitung</button>
                     <button class="btn-reset" onclick="resetluas()">Reset</button>
             </form>
@@ -76,24 +76,24 @@
             <hr>
             <form>
                 <div class="input-wrapper">
-                    <label for="sisi-a">Sisi a</label>
-                    <input id="sisi-a" type="number" placeholder="masukkan sisi a (cm)" />
+                    <label for="sisi1">Sisi a</label>
+                    <input id="sisi1" type="number" placeholder="masukkan sisi a (cm)" required />
                 </div>
                 <div class="input-wrapper">
-                    <label for="sisi-b">sisi b</label>
-                    <input id="sisi-b" type="number" placeholder="masukkan sisi b (cm)" />
+                    <label for="sisi2">sisi b</label>
+                    <input id="sisi2" type="number" placeholder="masukkan sisi b (cm)" required />
                 </div>
                 <div class="input-wrapper">
-                    <label for="sisi-c">sisi c</label>
-                    <input id="sisi-c" type="number" placeholder="masukkan sisi c (cm)" />
+                    <label for="sisi3">sisi c</label>
+                    <input id="sisi3" type="number" placeholder="masukkan sisi c (cm)" required />
                 </div>
-                    <p id="result">Hasil Perhitungan: </p>
+                    <p id="hasil-keliling">Hasil Perhitungan: </p>
                     <button class="btn-hitung" onclick="calckeliling()">Hitung</button>
                     <button class="btn-reset" onclick="resetkeliling()">Reset</button>
             </form>
             </aside>
         </section>
     </main>
-    <script src=""></script>
+    <script src="JS\script.js"></script>
 </body>
 </html>
