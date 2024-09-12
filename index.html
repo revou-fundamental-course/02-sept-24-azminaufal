@@ -7,10 +7,91 @@
     <title>Document</title>
     <link rel="stylesheet" href="CSS\style.css">
 </head>
-    <h1>Educalogy Math</h1>
-    <h3>Selamat datang di Educalogy Math! sebuah website sederhana untu menghitung Luas dan keliling Segitiga dan Jajargenjang</h3>
 
 <body>
-    
+    <!-- Konten Header -->
+    <header class="main-header">
+        <h1>Educalogy Math</h1>
+        <p>Selamat datang di Educalogy Math! sebuah website sederhana<br>untuk menghitung Luas dan keliling Segitiga serta Jajargenjang
+        </p>
+    </header>
+
+    <!-- Konten Selection -->
+    <main>
+        <section class="selection-content">
+            <ul class="ul-selection-content">
+                <li class="li-selection-content"><a href="index.html">Beranda</a></li>
+                <li class="li-selection-content"><a href="#">Segitiga</a></li>
+                <li class="li-selection-content"><a href="#">Jajargenjang</a></li>
+            </ul>
+        </section>
+
+        <section class="main-content">
+            <!-- Konten Luas Segitiga -->
+            <aside class="main-content-wrapper">
+            <header>
+                <h1 class="segitiga-header">Hitung Luas Segitiga</h1>
+            </header>
+            <article class="konten-segitiga">
+                <div class="luas-segitiga-img"></div>
+                <h3 class="rumus-luas-segitiga">L = 1/2 x a x t</h3>
+                <h4>Keterangan:</h4>
+                <ul class="ul-keterangan-rumus">
+                    <li>L = Luas</li>
+                    <li>a = Alas</li>
+                    <li>t = Tinggi</li>
+                </ul>
+            </article>
+            <hr>
+            <form>
+                <div class="input-wrapper">
+                    <label for="Panjang-alas">Panjang Alas</label>
+                    <input id="panjang-alas" type="number" placeholder="masukkan alas (cm)" />
+                </div>
+                <div class="input-wrapper">
+                    <label for="tinggi">Tinggi</label>
+                    <input id="tinggi" type="number" placeholder="masukkan tinggi (cm)" />
+                </div>
+                    <p id="result">Hasil Perhitungan: </p>
+                    <input type="hitung" value="Hitung">
+            </form>
+            </aside>
+        
+            
+            <!-- Konten Keliling Segitiga -->
+            <aside class="main-content-wrapper">
+            <header>
+                <h1 class="segitiga-header">Hitung Keliling Segitiga</h1>
+            </header>
+            <article class="konten-segitiga">
+                <div class="keliling-segitiga-img"></div>
+                <h3 class="rumus-keliling-segitiga">k = a + b + c</h3>
+                <h4>Keterangan:</h4>
+                <ul class="ul-keterangan-rumus">
+                    <li>Keliling Segitiga	&nbsp;= Jumlah panjang sisi-sisinya </li>
+                    <li>&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;= ab + bc + ca </li>
+                    <li>&nbsp;
+                </ul>
+            </article>
+            <hr>
+            <form>
+                <div class="input-wrapper">
+                    <label for="sisi-a">Sisi a</label>
+                    <input id="sisi-a" type="number" placeholder="masukkan sisi a (cm)" />
+                </div>
+                <div class="input-wrapper">
+                    <label for="sisi-b">sisi b</label>
+                    <input id="sisi-b" type="number" placeholder="masukkan sisi b (cm)" />
+                </div>
+                <div class="input-wrapper">
+                    <label for="sisi-c">sisi c</label>
+                    <input id="sisi-c" type="number" placeholder="masukkan sisi c (cm)" />
+                </div>
+                    <p id="result">Hasil Perhitungan: </p>
+                    <input type="hitung" value="Hitung">
+            </form>
+            </aside>
+        </section>
+    </main>
 </body>
 </html>
