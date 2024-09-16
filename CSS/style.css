@@ -110,7 +110,7 @@ article {
     border: 0px;
     width: 300px;
     height: 300px;
-    background-image:url(/Aset/Luas-Segitiga.png);
+    /* background-image:url(/Aset/Luas-Segitiga.png); */
     align-self: center;
 }
 
@@ -189,7 +189,7 @@ input[type=number] {
     border: 0px;
     width: 300px;
     height: 300px;
-    background-image:url(/Aset/Keliling-Segitiga.png);
+    /* background-image:url(/Aset/Keliling-Segitiga.png); */
     align-self: center;
 }
 
