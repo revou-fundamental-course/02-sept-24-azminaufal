@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="CSS\style.css">
 </head>
 
-<body>
+<body class="bg-primary">
     <!-- Konten Header -->
     <header class="main-header">
         <h1>Educalogy Math</h1>
@@ -46,15 +46,15 @@
             <form>
                 <div class="input-wrapper">
                     <label for="alas">Panjang Alas</label>
-                    <input type="number" id="alas"  placeholder="masukkan alas (cm)" required />
+                    <input type="number" id="alas" placeholder="masukkan alas (cm)" required />
                 </div>
                 <div class="input-wrapper">
                     <label for="tinggi">Tinggi</label>
                     <input id="tinggi" type="number" placeholder="masukkan tinggi (cm)" required />
                 </div>
                     <p id="hasil">Hasil Perhitungan:</p>
-                    <button class="btn-hitung" onclick="calcluas()">Hitung</button>
-                    <button class="btn-reset" onclick="resetluas()">Reset</button>
+                    <button type="button" class="btn-hitung" onclick="hitungluassegitiga()">Hitung</button>
+                    <button type="button" class="btn-reset" onclick="resetluassegitiga()">Reset</button>
             </form>
             </aside>
         
@@ -66,30 +66,37 @@
             <article class="konten-segitiga">
                 <div class="keliling-segitiga-img"></div>
                 <h3 class="rumus-keliling-segitiga">k = a + b + c</h3>
-                <h4>Keterangan:</h4>
-                <ul class="ul-keterangan-rumus">
-                    <li>Keliling Segitiga	&nbsp;= Jumlah panjang sisi-sisinya </li>
-                    <li>&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;= ab + bc + ca </li>
-                    <li>&nbsp;
-                </ul>
+                <div class="bg-secondary konten-segitiga-detail">
+                    <h4 class="bg-secondary">Keterangan:</h4>
+                    <ul class="ul-keterangan-rumus ">
+                        <li class="bg-secondary">Keliling Segitiga	&nbsp;= Jumlah panjang sisi-sisinya </li>
+                        <li class="bg-secondary">&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;= ab + bc + ca </li>
+                        <li class="bg-secondary">&nbsp;
+                        </ul>
+                    </div>
             </article>
             <hr>
-            <form>
-                <div class="input-wrapper">
-                    <label for="sisi1">Sisi a</label>
-                    <input id="sisi1" type="number" placeholder="masukkan sisi a (cm)" required />
+            <form class="bg-secondary">
+                <div class="form-list-input">
+                    <div class="input-wrapper bg-secondary">
+                        <label for="sisi1" class="bg-secondary"  >Sisi a</label>
+                        <input id="sisi1"  class="bg-secondary" type="number" placeholder="masukkan sisi a (cm)" required />
+                    </div>
+                    <div class="input-wrapper bg-secondary">
+                        <label for="sisi2" class="bg-secondary" >sisi b</label>
+                        <input id="sisi2" type="number" class="bg-secondary"  placeholder="masukkan sisi b (cm)" required />
+                    </div>
+                    <div class="input-wrapper bg-secondary">
+                        <label class="bg-secondary" for="sisi3">sisi c</label>
+                        <input class="bg-secondary" id="sisi3" type="number" placeholder="masukkan sisi c (cm)" required />
+                    </div>
                 </div>
-                <div class="input-wrapper">
-                    <label for="sisi2">sisi b</label>
-                    <input id="sisi2" type="number" placeholder="masukkan sisi b (cm)" required />
+                    
+                <div class="form-list-result">
+                    <p class="hasil-keliling-text">Hasil Perhitungan: <span id="hasil-keliling"  >0000</span> </p>
+                    <button class=" btn-hitung" type="button"  onclick="hitungkelilingsegitiga()">Hitung</button>
+                    <button class="btn-reset" type="button" class="btn-reset" onclick="resetkelilingsegitiga()">Reset</button>
                 </div>
-                <div class="input-wrapper">
-                    <label for="sisi3">sisi c</label>
-                    <input id="sisi3" type="number" placeholder="masukkan sisi c (cm)" required />
-                </div>
-                    <p id="hasil-keliling">Hasil Perhitungan: </p>
-                    <button class="btn-hitung" onclick="calckeliling()">Hitung</button>
-                    <button class="btn-reset" onclick="resetkeliling()">Reset</button>
             </form>
             </aside>
         </section>

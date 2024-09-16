@@ -1,15 +1,29 @@
 /* ini CSS */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: "Montserrat", system-ui;
+}
+/* font */
+.montserrat-bold{
+    font-family: "Montserrat", system-ui;
+}
 
 /* Styling Main-Header */
 .main-header {
     text-align: center;
+color: white;
 }
 
 
 /* Styling Navigasi-Content */
 .ul-selection-content {
     list-style-type: none;
+    flex: auto;
+    flex-direction: row;
+    gap: 25px;
     margin: 0;
     padding: 0;
     overflow:hidden;
@@ -31,6 +45,8 @@ li a {
     text-align: center;
     padding: 14px 16px;
     color:whitesmoke;
+    background-color: #b30404;
+
     text-decoration:none;
 }
 
@@ -46,7 +62,12 @@ li a:hover:not(.active) {
 /* Konten Utama */
 .main-content {
     display: flex;
+    flex-wrap: wrap;
+    /* display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr)); */
+
 }
+
 
 .main-content>aside {
     flex: 1;
@@ -57,6 +78,8 @@ li a:hover:not(.active) {
     padding: 20px;
     border: 5px solid darkgrey;
     border-radius: 20px;
+    background-color:whitesmoke ;
+
 }
 
 /* Konten Luas Segitiga */
@@ -71,9 +94,16 @@ li a:hover:not(.active) {
     background-color: #b30404;
 }
 
+article {
+    background-color:whitesmoke ;
+
+}
+
 .konten-segitiga {
     display: flex;
     flex-direction: column;
+    background-color:white ;
+
 }
 
 .luas-segitiga-img {
@@ -173,6 +203,52 @@ input[type=number] {
     text-align: center;
     align-self: center;
     background-color: khaki;
+}
+.konten-segitiga-detail{
+    padding: 10px;
+    margin: 25px;
+}
+
+.form-list-input{
+    display: flex;
+    margin: auto;
+    padding: 15px;
+    background-color: white;
+    flex-direction: column;
+    justify-content: center;
+  align-items: center;
+}
+
+.form-list-result{
+    background-color: white;
+
+
+}
+
+.hasil-keliling-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  align-items: center;
+}
+
+#hasil-keliling{
+    border-radius: 5px;
+    border: solid;
+    border-width: 1px;
+    margin: 10px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+  align-items: center;
+}
+/* utility */
+.bg-secondary{
+    background-color:white ;
+}
+
+.bg-primary{
+    background-color: #3e3e3e;
 }
 
 
